@@ -1,0 +1,241 @@
+profile:
+  skills: [web development, software, automation, API integrations, scraping, bots, internal tools]
+  languages: [Italian, English]
+  base_country: Italy
+  seniority_years: 7
+  min_hourly_eur: 20
+  min_project_eur: 500
+  usd_eur_rate: 0.92
+  gbp_eur_rate: 1.18
+  freshness_days: 30
+scoring:
+  threshold: 35
+  group_a_weight: 25
+  group_a_max: 50
+  group_b_weight: 8
+  group_b_max: 24
+  group_c_weight: 6
+  group_c_max: 12
+  group_d_weight: 3
+  group_d_max: 6
+  senior_bonus: 8
+  junior_penalty: -10
+  budget_bonus: 15
+  italian_bonus: 10
+  restricted_remote_penalty: -20
+  out_of_scope_penalty: -30
+  zero_a_min_b: 3
+  max_score: 100
+  require_freelance_signal: true
+keywords:
+  A:
+    - website
+    - web site
+    - sito web
+    - siti web
+    - sito internet
+    - sviluppo web
+    - web development
+    - web developer
+    - sviluppatore web
+    - landing page
+    - sito vetrina
+    - sito aziendale
+    - corporate website
+    - portfolio site
+    - e-commerce
+    - ecommerce
+    - negozio online
+    - online store
+    - shop online
+    - redesign
+    - restyling sito
+    - migrazione sito
+    - custom software
+    - software personalizzato
+    - software personalizzati
+    - software su misura
+    - software gestionale
+    - gestionale
+    - custom development
+    - bespoke software
+    - software development
+    - sviluppo software
+    - sviluppatore software
+    - programmatore
+    - developer
+    - application development
+    - sviluppo applicazioni
+    - web app
+    - webapp
+    - applicazione web
+    - SaaS
+    - MVP
+    - internal tool
+    - tool interno
+    - dashboard
+    - backoffice
+    - back office
+    - CRM custom
+    - ERP custom
+    - portale clienti
+    - customer portal
+    - booking system
+    - sistema di prenotazione
+    - automation
+    - automazione
+    - automazioni
+    - automatizzare
+    - automate
+    - workflow automation
+    - business automation
+    - process automation
+    - automazione processi
+    - RPA
+    - no-code automation
+    - low-code
+    - zapier
+    - make.com
+    - integromat
+    - n8n
+    - pipedream
+    - airtable automation
+    - google apps script
+    - apps script
+    - macro
+    - script
+  B:
+    - python
+    - javascript
+    - typescript
+    - node
+    - nodejs
+    - react
+    - nextjs
+    - next.js
+    - vue
+    - nuxt
+    - angular
+    - svelte
+    - php
+    - laravel
+    - symfony
+    - django
+    - flask
+    - fastapi
+    - express
+    - nestjs
+    - .net
+    - c#
+    - java
+    - spring
+    - go
+    - golang
+    - ruby
+    - rails
+    - wordpress
+    - woocommerce
+    - shopify
+    - prestashop
+    - webflow
+    - wix
+    - squarespace
+    - strapi
+    - headless cms
+    - magento
+    - joomla
+    - drupal
+    - API
+    - REST
+    - GraphQL
+    - webhook
+    - integrazione
+    - integration
+    - stripe
+    - paypal
+    - scraping
+    - web scraping
+    - crawler
+    - data extraction
+    - estrazione dati
+    - ETL
+    - data pipeline
+    - parser
+    - csv import
+    - excel automation
+    - google sheets
+    - sync
+    - bot
+    - chatbot
+    - telegram bot
+    - whatsapp bot
+    - discord bot
+    - AI agent
+    - agente AI
+    - LLM
+    - OpenAI
+    - GPT
+    - ChatGPT integration
+    - RAG
+    - AI automation
+    - backend
+    - database
+    - SQL
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+    - firebase
+    - supabase
+    - docker
+    - AWS
+    - deploy
+    - hosting
+    - server
+    - VPS
+    - CI/CD
+    - linux
+    - mobile app
+    - app mobile
+    - flutter
+    - react native
+    - PWA
+    - chrome extension
+    - estensione chrome
+    - browser extension
+    - desktop app
+    - electron
+  C: [freelance, freelancer, contract, contractor, project-based, one-off, one-time project, short-term, part-time, consulenza, consulente, collaborazione, "collaborazione occasionale", "partita iva", "p.iva", "a progetto", "lavoro a progetto", progetto, incarico, preventivo, quote, "fixed price", "prezzo fisso", hourly, "a ore", "tariffa oraria", budget, remote, "da remoto", remoto, "smart working", async, urgent, ASAP, urgente]
+  D: [fix, "bug fix", "risoluzione problemi", manutenzione, maintenance, supporto, support, ottimizzazione, optimization, performance, "SEO tecnica", migrazione, migration, refactoring, audit, "code review", "proof of concept", prototipo, prototype, startup, PMI, "small business", "agency white-label", subcontract]
+seniority:
+  positive: [senior, lead, architect, architettura, "end-to-end", "full stack", "from scratch", "da zero", scalable, production, ownership, "consulenza tecnica"]
+  negative: [junior, "entry level", neofita, "senza esperienza"]
+location:
+  italy_signals: [Italia, Italy, "azienda italiana", "clienti italiani", "Italian company", "based in Italy", Roma, Milano, Torino, Napoli, Bologna, Firenze, Genova, Venezia, Verona, Padova, Bari, Palermo, Catania]
+  boost_signals: [italiano, italiana, "da remoto", "smart working", "partita iva"]
+  restricted_signals: ["US only", "USA only", "must be in US", "US timezone", "North America only", "UK only", "United Kingdom only"]
+  onsite_signals: ["on-site only", "onsite only", "in sede obbligatoria", "on-site", onsite, "in sede", hybrid, ibrido]
+blacklist:
+  hard: ["full-time employee", "full time permanent", assunzione, "tempo indeterminato", CCNL, RAL, stage, tirocinio, internship, apprenticeship, apprendistato, "relocation required", "W2 only", unpaid, "no pay", "for exposure", visibilità, "equity only", "revenue share only", volunteer, volontario, "work for free", "test gratuito", "free trial task", "spec work", "commission only", "solo provvigioni", MLM, "network marketing", "crypto pump", "get rich", "guaranteed income", casino, gambling, adult, escort]
+  job_seeker_signals: ["[for hire]", "[for-hire]", "looking for work", "available for work"]
+  out_of_scope: ["graphic design only", "logo design only", "video editing only", "copywriting only", "data entry", "virtual assistant", "social media manager", "SEO content writing", "translator only", "cold calling", "sales representative", "customer service", tutor, "looking for work"]
+freelance_detection: [freelance, freelancer, contractor, contract, "project-based", "one-off", "one-time project", "short-term", consulenza, consulente, collaborazione, "partita iva", "p.iva", "a progetto", "lavoro a progetto", incarico]
+employment_signals: ["full-time", "full time", permanent, "tempo indeterminato", assunzione, employment]
+sources:
+  remotive: {enabled: true, url: "https://remotive.com/api/remote-jobs", poll_hours: 6, params: {limit: 100}}
+  remoteok: {enabled: true, url: "https://remoteok.com/api", poll_hours: 0}
+  workingnomads: {enabled: true, url: "https://www.workingnomads.com/api/exposed_jobs/", poll_hours: 0}
+  jobicy: {enabled: true, url: "https://jobicy.com/api/jobs", poll_hours: 1, params: {count: 100, geo: "europe"}}
+  hackernews: {enabled: true, url: "https://hn.algolia.com/api/v1/search_by_date", poll_hours: 0, queries: [{query: "Freelancer Seeking freelancer", tags: comment}, {query: "Who is hiring", tags: story}, {query: "freelance developer", tags: comment}, {query: "cerco sviluppatore freelance", tags: comment}, {query: "sviluppo sito web Italia", tags: comment}]}
+  arbeitnow: {enabled: true, url: "https://www.arbeitnow.com/api/job-board-api", poll_hours: 0}
+  google_alerts: {enabled: false, env_url: GOOGLE_ALERTS_RSS_URL, poll_hours: 0}
+runtime:
+  request_timeout_seconds: 15
+  retries: 2
+  max_concurrency: 6
+  user_agent: "JobRadarPersonal/1.0 (+https://github.com/ACTYKON/job-radar; personal job alerts)"
+  digest_hour_utc: 17
+  alert_failure_after: 3
+  database: state/jobs.sqlite3
+  llm_enabled: false
+  llm_threshold: 65
+  llm_model: gemini-2.5-flash

@@ -1,0 +1,51 @@
+name: Job Radar
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      send_test:
+        description: Send a Telegram connection test instead of running the monitor
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: job-radar
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: actions/cache/restore@v4
+        with:
+          path: state
+          key: job-radar-state-${{ github.run_id }}
+          restore-keys: job-radar-state-
+      - run: pip install -r requirements.txt
+      - name: Test Telegram
+        if: inputs.send_test
+        run: python -m src.main --send-test
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Monitor jobs
+        if: ${{ !inputs.send_test }}
+        run: python -m src.main
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          GOOGLE_ALERTS_RSS_URL: ${{ secrets.GOOGLE_ALERTS_RSS_URL }}
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: state
+          key: job-radar-state-${{ github.run_id }}
